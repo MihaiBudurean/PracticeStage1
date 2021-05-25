@@ -281,8 +281,12 @@ namespace PracticeStage1
 
 		Void menu_MouseDown(Object^ sender, MouseEventArgs^ e)
 		{
-			dragging = true;
-			last_point = Point(e->X, e->Y);
+			if (e->Button == System::Windows::Forms::MouseButtons::Left)
+			{
+				dragging = true;
+				last_point = Point(e->X, e->Y);
+			}
+			
 		}
 
 		Void menu_MouseUp(Object^ sender, MouseEventArgs^ e)
