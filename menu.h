@@ -240,9 +240,37 @@ namespace PracticeStage1
 		}
 		Void login_button_MouseClick(Object^ sender, MouseEventArgs^ e)
 		{
+			if (check_user(username_textbox->Text, password_textbox->Text)) {
+				this->Hide();
+				task^ form_task = gcnew task();
+				form_task->ShowDialog();
+			}
+			else {
+				MessageBox::Show(L"The username or password were wrong. Please check them again!");
+			}
 			this->Hide();
 			task^ form_task = gcnew task();
 			form_task->ShowDialog();
+		}
+
+		// text file
+		bool check_user(String^ username, String^ password)
+		{
+			String^ fileName = L"db.txt";
+			StreamReader^ file = File::OpenText(fileName);
+			String^ line, ^ line2;
+
+			while ((line = file->ReadLine()) != nullptr)
+			{
+				if (line == (L"Username: " + username))
+					if ((line2 = file->ReadLine()) == (L"Password: " + password)) {
+
+						file->Close();
+						return true;
+					}
+			}
+			file->Close();
+			return false;
 		}
 #pragma endregion	
 	};

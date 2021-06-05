@@ -144,6 +144,9 @@
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="task.resx">
+      <DependentUpon>task.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="db.txt" />

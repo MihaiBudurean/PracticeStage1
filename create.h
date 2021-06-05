@@ -1,5 +1,4 @@
 #pragma once
-#include "menu.h"
 
 namespace PracticeStage1
 {
@@ -49,15 +48,13 @@ namespace PracticeStage1
 		System::Windows::Forms::Label^ login_label;
 		System::Windows::Forms::Button^ ok_button1;
 		System::Windows::Forms::TextBox^ terms_textbox1;
-		System::Windows::Forms::Button^ logout_button1;
-
-	protected:
+		System::Windows::Forms::Button^ back_button1;
 
 	private:
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		System::ComponentModel::Container ^components1;
+		System::ComponentModel::Container^ components1;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -75,14 +72,14 @@ namespace PracticeStage1
 			this->terms_label1 = (gcnew System::Windows::Forms::Label());
 			this->terms_checkbox1 = (gcnew System::Windows::Forms::CheckBox());
 			this->terms_panel1 = (gcnew System::Windows::Forms::Panel());
-			this->login_label = (gcnew System::Windows::Forms::Label());
-			this->terms_textbox1 = (gcnew System::Windows::Forms::TextBox());
 			this->ok_button1 = (gcnew System::Windows::Forms::Button());
-			this->logout_button1 = (gcnew System::Windows::Forms::Button());
+			this->terms_textbox1 = (gcnew System::Windows::Forms::TextBox());
+			this->login_label = (gcnew System::Windows::Forms::Label());
+			this->back_button1 = (gcnew System::Windows::Forms::Button());
 			this->terms_panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// username_label
+			// username_label1
 			// 
 			this->username_label1->AutoSize = true;
 			this->username_label1->BackColor = System::Drawing::Color::Transparent;
@@ -90,21 +87,21 @@ namespace PracticeStage1
 				static_cast<System::Byte>(0)));
 			this->username_label1->ForeColor = System::Drawing::Color::White;
 			this->username_label1->Location = System::Drawing::Point(78, 111);
-			this->username_label1->Name = L"username_label";
+			this->username_label1->Name = L"username_label1";
 			this->username_label1->Size = System::Drawing::Size(150, 36);
 			this->username_label1->TabIndex = 2;
 			this->username_label1->Text = L"Username";
 			// 
-			// username_textbox
+			// username_textbox1
 			// 
 			this->username_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->username_textbox1->Location = System::Drawing::Point(84, 182);
-			this->username_textbox1->Name = L"username_textbox";
+			this->username_textbox1->Name = L"username_textbox1";
 			this->username_textbox1->Size = System::Drawing::Size(404, 34);
 			this->username_textbox1->TabIndex = 4;
 			// 
-			// password_label
+			// password_label1
 			// 
 			this->password_label1->AutoSize = true;
 			this->password_label1->BackColor = System::Drawing::Color::Transparent;
@@ -112,35 +109,35 @@ namespace PracticeStage1
 				static_cast<System::Byte>(0)));
 			this->password_label1->ForeColor = System::Drawing::Color::White;
 			this->password_label1->Location = System::Drawing::Point(78, 241);
-			this->password_label1->Name = L"password_label";
+			this->password_label1->Name = L"password_label1";
 			this->password_label1->Size = System::Drawing::Size(147, 36);
 			this->password_label1->TabIndex = 5;
 			this->password_label1->Text = L"Password";
 			// 
-			// password_textbox
+			// password_textbox1
 			// 
 			this->password_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->password_textbox1->Location = System::Drawing::Point(84, 312);
-			this->password_textbox1->Name = L"password_textbox";
+			this->password_textbox1->Name = L"password_textbox1";
 			this->password_textbox1->Size = System::Drawing::Size(404, 34);
 			this->password_textbox1->TabIndex = 6;
 			this->password_textbox1->UseSystemPasswordChar = true;
 			// 
-			// create_button
+			// create_button1
 			// 
 			this->create_button1->Enabled = false;
 			this->create_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->create_button1->Location = System::Drawing::Point(243, 445);
-			this->create_button1->Name = L"create_button";
+			this->create_button1->Name = L"create_button1";
 			this->create_button1->Size = System::Drawing::Size(118, 43);
 			this->create_button1->TabIndex = 7;
 			this->create_button1->Text = L"Create";
 			this->create_button1->UseVisualStyleBackColor = true;
 			this->create_button1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::create_button_MouseClick);
 			// 
-			// terms_label
+			// terms_label1
 			// 
 			this->terms_label1->AutoSize = true;
 			this->terms_label1->BackColor = System::Drawing::Color::Transparent;
@@ -149,13 +146,14 @@ namespace PracticeStage1
 				static_cast<System::Byte>(0)));
 			this->terms_label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->terms_label1->Location = System::Drawing::Point(188, 387);
-			this->terms_label1->Name = L"terms_label";
+			this->terms_label1->Location = System::Drawing::Point(212, 386);
+			this->terms_label1->Name = L"terms_label1";
 			this->terms_label1->Size = System::Drawing::Size(173, 20);
 			this->terms_label1->TabIndex = 10;
 			this->terms_label1->Text = L"Terms and Conditions";
+			this->terms_label1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::terms_label1_MouseClick);
 			// 
-			// terms_checkbox
+			// terms_checkbox1
 			// 
 			this->terms_checkbox1->AutoSize = true;
 			this->terms_checkbox1->BackColor = System::Drawing::Color::Transparent;
@@ -163,21 +161,46 @@ namespace PracticeStage1
 				static_cast<System::Byte>(0)));
 			this->terms_checkbox1->ForeColor = System::Drawing::Color::White;
 			this->terms_checkbox1->Location = System::Drawing::Point(84, 386);
-			this->terms_checkbox1->Name = L"terms_checkbox";
+			this->terms_checkbox1->Name = L"terms_checkbox1";
 			this->terms_checkbox1->Size = System::Drawing::Size(122, 24);
 			this->terms_checkbox1->TabIndex = 11;
 			this->terms_checkbox1->Text = L"Agree to the";
 			this->terms_checkbox1->UseVisualStyleBackColor = false;
+			this->terms_checkbox1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::terms_checkbox1_MouseClick);
 			// 
-			// terms_panel
+			// terms_panel1
 			// 
 			this->terms_panel1->BackColor = System::Drawing::Color::Transparent;
 			this->terms_panel1->Controls->Add(this->ok_button1);
 			this->terms_panel1->Controls->Add(this->terms_textbox1);
 			this->terms_panel1->Location = System::Drawing::Point(494, 35);
-			this->terms_panel1->Name = L"terms_panel";
+			this->terms_panel1->Name = L"terms_panel1";
 			this->terms_panel1->Size = System::Drawing::Size(431, 466);
 			this->terms_panel1->TabIndex = 12;
+			this->terms_panel1->Visible = false;
+			// 
+			// ok_button1
+			// 
+			this->ok_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->ok_button1->Location = System::Drawing::Point(165, 410);
+			this->ok_button1->Name = L"ok_button1";
+			this->ok_button1->Size = System::Drawing::Size(118, 43);
+			this->ok_button1->TabIndex = 1;
+			this->ok_button1->Text = L"OK";
+			this->ok_button1->UseVisualStyleBackColor = true;
+			this->ok_button1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::ok_button1_MouseClick);
+			// 
+			// terms_textbox1
+			// 
+			this->terms_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->terms_textbox1->Location = System::Drawing::Point(39, 3);
+			this->terms_textbox1->Multiline = true;
+			this->terms_textbox1->Name = L"terms_textbox1";
+			this->terms_textbox1->Size = System::Drawing::Size(365, 333);
+			this->terms_textbox1->TabIndex = 0;
+			this->terms_textbox1->Text = L"These are terms and conditions! Nothing special for now.";
 			// 
 			// login_label
 			// 
@@ -192,38 +215,17 @@ namespace PracticeStage1
 			this->login_label->TabIndex = 13;
 			this->login_label->Text = L"Create Account";
 			// 
-			// terms_textbox
+			// back_button1
 			// 
-			this->terms_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->back_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->terms_textbox1->Location = System::Drawing::Point(39, 3);
-			this->terms_textbox1->Multiline = true;
-			this->terms_textbox1->Name = L"terms_textbox";
-			this->terms_textbox1->Size = System::Drawing::Size(365, 333);
-			this->terms_textbox1->TabIndex = 0;
-			this->terms_textbox1->Text = L"These are terms and conditions! Nothing special for now.";
-			// 
-			// ok_button
-			// 
-			this->ok_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->ok_button1->Location = System::Drawing::Point(165, 410);
-			this->ok_button1->Name = L"ok_button";
-			this->ok_button1->Size = System::Drawing::Size(118, 43);
-			this->ok_button1->TabIndex = 1;
-			this->ok_button1->Text = L"OK";
-			this->ok_button1->UseVisualStyleBackColor = true;
-			// 
-			// logout_button
-			// 
-			this->logout_button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->logout_button1->Location = System::Drawing::Point(83, 445);
-			this->logout_button1->Name = L"logout_button";
-			this->logout_button1->Size = System::Drawing::Size(118, 43);
-			this->logout_button1->TabIndex = 14;
-			this->logout_button1->Text = L"Log Out";
-			this->logout_button1->UseVisualStyleBackColor = true;
+			this->back_button1->Location = System::Drawing::Point(83, 445);
+			this->back_button1->Name = L"back_button1";
+			this->back_button1->Size = System::Drawing::Size(118, 43);
+			this->back_button1->TabIndex = 14;
+			this->back_button1->Text = L"Back";
+			this->back_button1->UseVisualStyleBackColor = true;
+			this->back_button1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::back_button1_MouseClick);
 			// 
 			// create
 			// 
@@ -232,11 +234,11 @@ namespace PracticeStage1
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(954, 537);
-			this->Controls->Add(this->logout_button1);
+			this->Controls->Add(this->terms_label1);
+			this->Controls->Add(this->back_button1);
 			this->Controls->Add(this->login_label);
 			this->Controls->Add(this->terms_panel1);
 			this->Controls->Add(this->terms_checkbox1);
-			this->Controls->Add(this->terms_label1);
 			this->Controls->Add(this->create_button1);
 			this->Controls->Add(this->password_textbox1);
 			this->Controls->Add(this->password_label1);
@@ -299,11 +301,28 @@ namespace PracticeStage1
 			this->terms_panel1->Show();
 		}
 
-		Void ok_button_MouseClick(Object^ sender, MouseEventArgs^ e)
+		Void terms_label1_MouseClick(Object^ sender, MouseEventArgs^ e)
 		{
-			this->terms_panel1->Hide();
+			this->terms_panel1->Visible = true;
 		}
 
+		Void ok_button1_MouseClick(Object^ sender, MouseEventArgs^ e)
+		{
+			this->terms_panel1->Visible = false;
+		}
+
+		Void back_button1_MouseClick(Object^ sender, MouseEventArgs^ e)
+		{
+			/*this->Hide();
+			menu^ form = gcnew menu();
+			form->ShowDialog();*/
+		}
+
+		Void terms_checkbox1_MouseClick(Object^ sender, MouseEventArgs^ e)
+		{
+			this->create_button1->Enabled = this->terms_checkbox1->Checked;
+		}
+		
 		//Text file
 
 		void signUp(String^ username, String^ password)

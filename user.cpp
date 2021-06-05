@@ -1,15 +1,18 @@
 #include "user.h"
 
-User::User() : username{ nullptr }, password{ nullptr } {}
+User::User() : _username{ nullptr } {}
 
-User::User(const User% u) : username{ u.username }, password{ u.password } {}
+User::User(const User% u) : _username{ u._username } {}
 
-User::User(System::String^ n, System::String^ p) : username{ n }, password{ p } {}
+User::User(System::String^ userName) : _username{ userName } {}
 
 User::~User()
 {
-	if (username)
-		delete username;
-	if (password)
-		delete password;
+	if (_username)
+		delete _username;
+}
+
+System::String^ User::username()
+{ 
+	return _username; 
 }

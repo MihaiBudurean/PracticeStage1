@@ -3,12 +3,11 @@
 
 ref class User
 {
-	System::String^ username;
-	System::String^ password;
-	cliext::list<int> tasks;
+	System::String^ _username;
 public:
 	User();
 	User(const User%);
-	User(System::String^, System::String^);
+	User(System::String^);
 	~User();
+	System::String^ username();
 };
