@@ -460,6 +460,16 @@ namespace PracticeStage1
 					System::String^ dob = textBox2->Text;
 					System::String^ key = textBox3->Text;
 					signUp(username, password, name, dob, key);
+					StreamWriter^ sw = gcnew StreamWriter("temp.txt");
+					sw->WriteLine(username);
+					sw->WriteLine(password);
+					sw->WriteLine(name);
+					sw->WriteLine(dob);
+					sw->WriteLine(key);
+					sw->Close();
+					this->Hide();
+					print^ form = gcnew print();
+					form->ShowDialog();
 				}
 				else
 				{
@@ -469,9 +479,6 @@ namespace PracticeStage1
 			else {
 				MessageBox::Show(L"You have to agree with the terms and conditions!");
 			}
-			this->Hide();
-			print^ form = gcnew print();
-			form->ShowDialog();
 		}
 #pragma endregion
 	};

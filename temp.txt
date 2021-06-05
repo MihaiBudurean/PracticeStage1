@@ -1,0 +1,5 @@
+Username: Mihai1907
+Password: 1234
+Name: Mihai
+Date of Birth: 19/07/2001
+Favourite number: 5
