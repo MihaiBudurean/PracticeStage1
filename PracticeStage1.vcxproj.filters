@@ -18,13 +18,10 @@
     <ClCompile Include="menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="user.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="create.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="task.cpp">
+    <ClCompile Include="print.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,18 +29,18 @@
     <ClInclude Include="menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="user.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="create.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="task.h">
+    <ClInclude Include="print.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="db.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="temp.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

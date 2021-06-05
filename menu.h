@@ -1,6 +1,6 @@
 #pragma once
-#include "task.h"
 #include "create.h"
+#include "print.h"
 
 namespace PracticeStage1
 {
@@ -242,15 +242,12 @@ namespace PracticeStage1
 		{
 			if (check_user(username_textbox->Text, password_textbox->Text)) {
 				this->Hide();
-				task^ form_task = gcnew task();
-				form_task->ShowDialog();
+				print^ form = gcnew print();
+				form->ShowDialog();
 			}
 			else {
 				MessageBox::Show(L"The username or password were wrong. Please check them again!");
 			}
-			this->Hide();
-			task^ form_task = gcnew task();
-			form_task->ShowDialog();
 		}
 
 		// text file

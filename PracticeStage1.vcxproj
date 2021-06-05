@@ -122,8 +122,7 @@
   <ItemGroup>
     <ClCompile Include="create.cpp" />
     <ClCompile Include="menu.cpp" />
-    <ClCompile Include="task.cpp" />
-    <ClCompile Include="user.cpp" />
+    <ClCompile Include="print.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="create.h">
@@ -132,10 +131,9 @@
     <ClInclude Include="menu.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="task.h">
+    <ClInclude Include="print.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="create.resx">
@@ -144,12 +142,13 @@
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="task.resx">
-      <DependentUpon>task.h</DependentUpon>
+    <EmbeddedResource Include="print.resx">
+      <DependentUpon>print.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Text Include="db.txt" />
+    <Text Include="temp.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

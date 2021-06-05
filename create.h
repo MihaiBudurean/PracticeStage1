@@ -1,4 +1,5 @@
 #pragma once
+#include "print.h"
 
 namespace PracticeStage1
 {
@@ -49,6 +50,12 @@ namespace PracticeStage1
 		System::Windows::Forms::Button^ ok_button1;
 		System::Windows::Forms::TextBox^ terms_textbox1;
 		System::Windows::Forms::Button^ back_button1;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::TextBox^ textBox3;
 
 	private:
 		/// <summary>
@@ -76,6 +83,12 @@ namespace PracticeStage1
 			this->terms_textbox1 = (gcnew System::Windows::Forms::TextBox());
 			this->login_label = (gcnew System::Windows::Forms::Label());
 			this->back_button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->terms_panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -83,12 +96,12 @@ namespace PracticeStage1
 			// 
 			this->username_label1->AutoSize = true;
 			this->username_label1->BackColor = System::Drawing::Color::Transparent;
-			this->username_label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->username_label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->username_label1->ForeColor = System::Drawing::Color::White;
-			this->username_label1->Location = System::Drawing::Point(78, 111);
+			this->username_label1->Location = System::Drawing::Point(61, 90);
 			this->username_label1->Name = L"username_label1";
-			this->username_label1->Size = System::Drawing::Size(150, 36);
+			this->username_label1->Size = System::Drawing::Size(124, 29);
 			this->username_label1->TabIndex = 2;
 			this->username_label1->Text = L"Username";
 			// 
@@ -96,21 +109,21 @@ namespace PracticeStage1
 			// 
 			this->username_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->username_textbox1->Location = System::Drawing::Point(84, 182);
+			this->username_textbox1->Location = System::Drawing::Point(54, 136);
 			this->username_textbox1->Name = L"username_textbox1";
-			this->username_textbox1->Size = System::Drawing::Size(404, 34);
+			this->username_textbox1->Size = System::Drawing::Size(178, 34);
 			this->username_textbox1->TabIndex = 4;
 			// 
 			// password_label1
 			// 
 			this->password_label1->AutoSize = true;
 			this->password_label1->BackColor = System::Drawing::Color::Transparent;
-			this->password_label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->password_label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->password_label1->ForeColor = System::Drawing::Color::White;
-			this->password_label1->Location = System::Drawing::Point(78, 241);
+			this->password_label1->Location = System::Drawing::Point(49, 193);
 			this->password_label1->Name = L"password_label1";
-			this->password_label1->Size = System::Drawing::Size(147, 36);
+			this->password_label1->Size = System::Drawing::Size(120, 29);
 			this->password_label1->TabIndex = 5;
 			this->password_label1->Text = L"Password";
 			// 
@@ -118,9 +131,9 @@ namespace PracticeStage1
 			// 
 			this->password_textbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->password_textbox1->Location = System::Drawing::Point(84, 312);
+			this->password_textbox1->Location = System::Drawing::Point(54, 244);
 			this->password_textbox1->Name = L"password_textbox1";
-			this->password_textbox1->Size = System::Drawing::Size(404, 34);
+			this->password_textbox1->Size = System::Drawing::Size(178, 34);
 			this->password_textbox1->TabIndex = 6;
 			this->password_textbox1->UseSystemPasswordChar = true;
 			// 
@@ -146,7 +159,7 @@ namespace PracticeStage1
 				static_cast<System::Byte>(0)));
 			this->terms_label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
-			this->terms_label1->Location = System::Drawing::Point(212, 386);
+			this->terms_label1->Location = System::Drawing::Point(171, 389);
 			this->terms_label1->Name = L"terms_label1";
 			this->terms_label1->Size = System::Drawing::Size(173, 20);
 			this->terms_label1->TabIndex = 10;
@@ -160,7 +173,7 @@ namespace PracticeStage1
 			this->terms_checkbox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->terms_checkbox1->ForeColor = System::Drawing::Color::White;
-			this->terms_checkbox1->Location = System::Drawing::Point(84, 386);
+			this->terms_checkbox1->Location = System::Drawing::Point(54, 385);
 			this->terms_checkbox1->Name = L"terms_checkbox1";
 			this->terms_checkbox1->Size = System::Drawing::Size(122, 24);
 			this->terms_checkbox1->TabIndex = 11;
@@ -206,12 +219,12 @@ namespace PracticeStage1
 			// 
 			this->login_label->AutoSize = true;
 			this->login_label->BackColor = System::Drawing::Color::Transparent;
-			this->login_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->login_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->login_label->ForeColor = System::Drawing::Color::White;
 			this->login_label->Location = System::Drawing::Point(75, 35);
 			this->login_label->Name = L"login_label";
-			this->login_label->Size = System::Drawing::Size(311, 46);
+			this->login_label->Size = System::Drawing::Size(224, 32);
 			this->login_label->TabIndex = 13;
 			this->login_label->Text = L"Create Account";
 			// 
@@ -227,6 +240,72 @@ namespace PracticeStage1
 			this->back_button1->UseVisualStyleBackColor = true;
 			this->back_button1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &create::back_button1_MouseClick);
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->BackColor = System::Drawing::Color::Transparent;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::Color::White;
+			this->label1->Location = System::Drawing::Point(294, 90);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(78, 29);
+			this->label1->TabIndex = 15;
+			this->label1->Text = L"Name";
+			// 
+			// textBox1
+			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox1->Location = System::Drawing::Point(299, 136);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(178, 34);
+			this->textBox1->TabIndex = 16;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->BackColor = System::Drawing::Color::Transparent;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label2->ForeColor = System::Drawing::Color::White;
+			this->label2->Location = System::Drawing::Point(294, 193);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(144, 29);
+			this->label2->TabIndex = 17;
+			this->label2->Text = L"Date of Birth";
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox2->Location = System::Drawing::Point(299, 244);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(178, 34);
+			this->textBox2->TabIndex = 18;
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->BackColor = System::Drawing::Color::Transparent;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::Color::White;
+			this->label3->Location = System::Drawing::Point(49, 303);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(439, 29);
+			this->label3->TabIndex = 19;
+			this->label3->Text = L"Add your favourite number (1 or 2 digits)";
+			// 
+			// textBox3
+			// 
+			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->textBox3->Location = System::Drawing::Point(225, 337);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(74, 34);
+			this->textBox3->TabIndex = 20;
+			// 
 			// create
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -234,6 +313,12 @@ namespace PracticeStage1
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(954, 537);
+			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->textBox2);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->terms_label1);
 			this->Controls->Add(this->back_button1);
 			this->Controls->Add(this->login_label);
@@ -325,13 +410,16 @@ namespace PracticeStage1
 		
 		//Text file
 
-		void signUp(String^ username, String^ password)
+		void signUp(String^ username, String^ password, String^ name, String^ dob, String^ key)
 		{
 			String^ text = Text;
-			String^ fileName = L"C:\\Users\\mihai\\source\\repos\\PracticeStage1\\db.txt";
+			String^ fileName = L"db.txt";
 			StreamWriter^ sw = File::AppendText(fileName);
 			sw->WriteLine("Username: " + username);
-			sw->WriteLine("Password: " + password + "\n===\n");
+			sw->WriteLine("Password: " + password);
+			sw->WriteLine("Name: " + name);
+			sw->WriteLine("Date of Birth: " + dob);
+			sw->WriteLine("Favourite number: " + key + "\n===\n");
 			sw->Flush();
 			sw->Close();
 		}
@@ -343,7 +431,7 @@ namespace PracticeStage1
 
 		bool check_new_user(String^ keyword)
 		{
-			String^ fileName = L"C:\\Users\\mihai\\source\\repos\\PracticeStage1\\db.txt";
+			String^ fileName = L"db.txt";
 			StreamReader^ file = File::OpenText(fileName);
 			String^ line;
 
@@ -368,7 +456,10 @@ namespace PracticeStage1
 				{
 					System::String^ username = username_textbox1->Text;
 					System::String^ password = password_textbox1->Text;
-					signUp(username, password);
+					System::String^ name = textBox1->Text;
+					System::String^ dob = textBox2->Text;
+					System::String^ key = textBox3->Text;
+					signUp(username, password, name, dob, key);
 				}
 				else
 				{
@@ -378,6 +469,9 @@ namespace PracticeStage1
 			else {
 				MessageBox::Show(L"You have to agree with the terms and conditions!");
 			}
+			this->Hide();
+			print^ form = gcnew print();
+			form->ShowDialog();
 		}
 #pragma endregion
 	};

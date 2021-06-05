@@ -1,5 +1,7 @@
-A text file is born!C:\Users\mihai\source\repos\PracticeStage1\db.txt
-Username: 1
-Password: 1
+Username: Mihai1907
+Password: 1234
+Name: Mihai
+Date of Birth: 19/07/2001
+Favourite number: 5
 ===
 
