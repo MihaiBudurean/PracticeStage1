@@ -120,16 +120,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="create.cpp" />
     <ClCompile Include="menu.cpp" />
+    <ClCompile Include="task.cpp" />
     <ClCompile Include="user.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="create.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="menu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="task.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="user.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="create.resx">
+      <DependentUpon>create.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.h</DependentUpon>
     </EmbeddedResource>

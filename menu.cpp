@@ -3,7 +3,7 @@
 using namespace System;
 using namespace System::Windows::Forms;
 
-[STAThread]
+[STAThreadAttribute]
 
 int main(array<String^>^ args)
 {
